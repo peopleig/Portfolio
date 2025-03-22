@@ -1,0 +1,183 @@
+.poiret-one-regular {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  /*Trial scrolling*/
+  html {
+    scroll-behavior: smooth;
+  }
+
+* {
+    font-family: "Poiret One", sans-serif;
+    font-weight: 400;
+    font-style: normal;  
+    margin: 0;
+    padding: 0; 
+    align-items: center;
+    background-color: #0F1220;
+}
+/* NavBar*/
+.NavBar {
+    display: flex;
+    background-color: #0A0B10;
+    color: white;
+    align-items: center;
+    padding: 2vh 3vw;
+    justify-content: space-between; 
+    font-size: 1.7vw;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    color: #7067CF;
+    font-size: 400%;
+    font-weight: bold;
+    background-color: #0A0B10;
+}
+
+#logo:hover{
+    cursor: pointer;
+}
+#home, #works, #contacte {
+    background-color: #0A0B10;
+}
+#NepImg {
+    width: 12%; 
+    background-color: #0A0B10;
+}
+
+.notlogo {
+    display: flex;
+    gap: 6vw; 
+    background-color: #0A0B10;
+    margin: auto;
+}
+
+.ref a{
+    text-decoration: none;
+    color: white;
+    background-color: #0A0B10;
+    font-size: 2.5vw;
+}
+/*NavBar donee*/
+
+.contents {
+    width: 75%;
+    margin: auto;
+    color: white;
+}
+.boxes {
+    border-left: 1px solid white;
+    padding: 15px;
+    font-size: 150%;
+}
+h1 {
+    color: #7067CF;
+}
+
+#Project {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.projects {
+    display: inline-flex;
+    border-color: white;
+    border-width: 1px;
+    border-style: solid;
+    border-left: none;
+    border-right: none;
+    align-self: center;
+}
+.projects a {
+    padding: 10px;
+    font-size: 150%;
+    text-decoration: none;
+    color: white;
+    transition: transform 1s ease;
+}
+
+.projects a:hover {
+    transform: scale(1.2);
+}
+
+.scrollBox {
+    background-color:#0F1220;
+    overflow: auto;
+    white-space: nowrap;
+    padding: 10px;
+  }
+  
+.scrollBox img {
+    padding-right: 25%;
+    padding-left: 25%;
+    width: 50%;
+    background-color: #0F1220;
+  }
+
+
+  /* Different Scrollbar */
+.scrollBox::-webkit-scrollbar {
+    height: 0.4vw;
+}
+
+.scrollBox::-webkit-scrollbar-track {
+    background-color: #0F1220; 
+}
+
+.scrollBox::-webkit-scrollbar-thumb {
+    background-color:  #7067CF;
+    border-radius: 10px;
+}
+
+.scrollBox:hover::-webkit-scrollbar {
+    height: 0.6vw;
+}
+
+.scrollBox:hover::-webkit-scrollbar-thumb{
+    background-color:  #4c40cf;
+}
+
+/* End of different scrollbar */
+
+/* Footer Starting */
+
+#end {
+    background-color: #0A0B10;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#image {
+    background-color: #0A0B10;
+    display: flex;
+    justify-content: center;
+    padding-right: 20px;
+}
+#contact{
+    font-size: 200%;
+    color: white;
+    display: inline;
+    background-color: #0A0B10;
+    padding-top: 1vw;
+    padding-left: 0.5vw;
+    padding-bottom: 1vw;
+}
+img {
+    width: 30px;
+    background-color: #0A0B10;
+    padding: 10px;
+}
+
+/* Footer Ending */
+
+
+
+
+/* Change the vertical body scrollbar */
+/* Want to hide the scrollbar unless cursor on images */
+/* Need to use media queries for responsiveness */
+/* Animations */
+
