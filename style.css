@@ -54,6 +54,15 @@
     background-color: #0A0B10;
     margin: auto;
 }
+.ref :hover{
+    border-style: solid;
+    border-width: 2px;
+    border-color: #7067CF;
+    border-top: none;
+    border-bottom: none;
+    border-right: none;
+    color: #7067CF;
+}
 
 .ref a{
     text-decoration: none;
@@ -90,13 +99,15 @@ h1 {
     border-left: none;
     border-right: none;
     align-self: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 .projects a {
     padding: 10px;
     font-size: 150%;
     text-decoration: none;
     color: white;
-    transition: transform 1s ease;
+    transition: transform 0.5s ease;
 }
 
 .projects a:hover {
