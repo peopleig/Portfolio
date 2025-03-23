@@ -10,7 +10,7 @@
 
 * {
     font-family: "Poiret One", sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-style: normal;  
     margin: 0;
     padding: 0; 
@@ -18,41 +18,41 @@
     background-color: #0F1220;
 }
 /* NavBar*/
+
 .NavBar {
     display: flex;
     background-color: #0A0B10;
     color: white;
     align-items: center;
-    padding: 2vh 3vw;
-    justify-content: space-between; 
-    font-size: 1.7vw;
+    justify-content: space-between;
+    padding: 1vh 3vw;
 }
-
 #logo {
-    display: flex;
+    display: inline-flex;
     align-items: center;
     color: #7067CF;
-    font-size: 400%;
-    font-weight: bold;
     background-color: #0A0B10;
+    font-size: 5vw;
 }
 
-#logo:hover{
-    cursor: pointer;
+#logo img {
+    width: 10%;
+    background-color: #0A0B10;
+}
+.ref {
+    flex-grow: 2;
+    align-items: center;
+}
+.ref a {
+    background-color: #0A0B10;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    padding-right: 20px;
+    padding-left: 10px;
 }
 #home, #works, #contacte {
     background-color: #0A0B10;
-}
-#NepImg {
-    width: 12%; 
-    background-color: #0A0B10;
-}
-
-.notlogo {
-    display: flex;
-    gap: 6vw; 
-    background-color: #0A0B10;
-    margin: auto;
 }
 .ref :hover{
     border-style: solid;
@@ -63,15 +63,6 @@
     border-right: none;
     color: #7067CF;
 }
-
-.ref a{
-    text-decoration: none;
-    color: white;
-    background-color: #0A0B10;
-    font-size: 2.5vw;
-    padding: 5px;
-}
-/*NavBar donee*/
 
 .contents {
     width: 75%;
@@ -94,6 +85,7 @@ h1 {
 }
 .projects {
     display: inline-flex;
+    justify-content: space-between;
     border-color: white;
     border-width: 1px;
     border-style: solid;
@@ -104,55 +96,115 @@ h1 {
     padding-bottom: 10px;
 }
 .projects a {
-    padding: 10px;
+    padding: 15px;
+    padding-right: 20px;
     font-size: 150%;
     text-decoration: none;
     color: white;
     transition: transform 0.5s ease;
 }
-
+.projects a img {
+    width: 30px;
+    background-color: #0A0B10;
+    padding: 10px;
+}
 .projects a:hover {
     transform: scale(1.2);
 }
 
-.scrollBox {
-    background-color:#0F1220;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 10px;
-  }
-  
-.scrollBox img {
-    padding-right: 25%;
-    padding-left: 25%;
-    width: 50%;
+.columns {
+    display: flex;
+    flex-direction: row;
     background-color: #0F1220;
-  }
-
-
-  /* Different Scrollbar */
-.scrollBox::-webkit-scrollbar {
-    height: 0.4vw;
+    justify-content: space-around;
+}
+.fitbox {
+    display: flex;
+    position: relative;
+    width: 450px;
+    height: 350px;
+    margin-bottom: 2vw;
+}
+.top, .bottom {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.top img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tile {
+    font-weight: 600;
+    font-style: italic;
+    color: #7067CF;
+}
+.bottom {
+    display: flex;
 }
 
-.scrollBox::-webkit-scrollbar-track {
-    background-color: #0F1220; 
+.textt {
+    align-self: baseline;
+}
+.top {
+    z-index: 1;
+    mix-blend-mode: normal;
+    transition: opacity 0.5s ease-in-out;
+}
+.fitbox:hover .top {
+    opacity: 0;
+}
+.fitbox:active .top {
+    opacity: 0;
 }
 
-.scrollBox::-webkit-scrollbar-thumb {
-    background-color:  #7067CF;
-    border-radius: 10px;
+
+@media screen and (max-width:1300px){
+    .fitbox {
+        display: flex;
+        position: relative;
+        width: 300px;
+        height: 230px;
+        margin-bottom: 3vw;
+    }
 }
 
-.scrollBox:hover::-webkit-scrollbar {
-    height: 0.6vw;
+@media screen and (max-width:930px){
+    .fitbox {
+        display: flex;
+        position: relative;
+        width: 200px;
+        height: 130px;
+        margin-bottom: 3vw;
+    }
+    .bottom p {
+        font-size: small;
+    }
 }
 
-.scrollBox:hover::-webkit-scrollbar-thumb{
-    background-color:  #4c40cf;
-}
+@media screen and (max-width:600px){
+    .columns {
+        display: flex;
+        flex-direction: column;
+        margin-left: 5vw;
+    }
+    .fitbox {
+        flex-direction: column;
+        justify-content: space-around;
+        width: 100%;
+        height: 50vw;
+        margin-bottom: 3vw;
+    }
+    .top, .bottom {
+        margin-top: 3vw;
+        margin-bottom: 3vw;
+    }
+    .bottom p {
+        font-size: large;
+    }
 
-/* End of different scrollbar */
+}
 
 /* Footer Starting */
 
@@ -160,28 +212,32 @@ h1 {
     background-color: #0A0B10;
     display: flex;
     align-items: center;
+    width: 100%;
     justify-content: space-around;
 }
 #image {
     background-color: #0A0B10;
     display: flex;
-    justify-content: center;
+    width: 50%;
+    justify-content: space-evenly;
     padding-right: 20px;
 }
 #contact{
     font-size: 200%;
     color: white;
     display: inline;
+    width: 50%;
     background-color: #0A0B10;
     padding-top: 1vw;
-    padding-left: 0.5vw;
     padding-bottom: 1vw;
+    padding-left: 2vw;
 }
-img {
-    width: 30px;
-    background-color: #0A0B10;
-    padding: 10px;
+#image img {
+    width: 5vw; 
+    max-width: 40px; 
+    height: auto; 
 }
+
 
 /* Footer Ending */
 
