@@ -11,25 +11,24 @@
     <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="NavBar"> 
+    <nav class="NavBar"> 
         <div id="logo"><img src="Neptunee.png" alt="Pic of Neptune Here" title="Neptune" id="NepImg">neptune</div>
-        <div class="notlogo">
-            <div id="home" class="ref"><a href="#logo">home</a></div>
-            <div id="works" class="ref"><a href="#Project">works</a></div>
-            <div id="contacte" class="ref"><a href="#end">contact</a></div>
-        </div>
-    </div>
+        <div id="home" class="ref"><a href="#logo">home</a></div>
+        <div id="works" class="ref"><a href="#Project">works</a></div>
+        <div id="contacte" class="ref"><a href="#end">contact</a></div>
+    </nav>
     <br>
     <div class="contents">
         <div id="me"  class="boxes">
             <h1>Me</h1>
-            <p>Hello, welcome. Let me tell you a bit about myself. I am an engineering student who harbours an interest in photography, creative writing, music, ancient history and a
+            <p>Welcome. Let me tell you a bit about myself. I am an engineering student who harbours an interest in photography, creative writing, music, ancient history and a
                 bit of geopolitics. My journey as a web developer is only beginning, as this is only my second project.
             </p>
         </div>
         <br><hr><br>
         <div class="boxes" id="Project"><h1>My Projects</h1>
             <p>The following are my projects that I've made as a web developer:</p>
+            <br>
             <br>
             <div class="projects">
                 <a href="https://github.com/peopleig/phone-picker" target="_blank"><img src="phones.png"></a><a href="https://github.com/peopleig/phone-picker" target="_blank">Phone Picker</a>
@@ -45,16 +44,98 @@
         <div id="photos" class="boxes"><h1>Photography</h1>
             <p>My interest in photography has peaked since coming to campus, and I have tried my hand at a lot of shoots. Here are a few of my best clicks.</p>
             <br>
-            <div class="scrollBox">
-                <img src="Rooftop.jpg" alt="Rooftop" title="Roofotp" class="pics">
-                <img src="Starry Night.jpg" alt="Stars" title="Starry Night"class="pics">
-                <img src="Suits.jpg" alt="Suits" title="Suits"class="pics">
-                <img src="Cake.jpg" alt="Cake" title="Chocolate Cake"class="pics">
-                <img src="Event.jpg" alt="Event" title="SlowCheeta"class="pics">
-                <img src="Clock.jpg" alt="Alarm Clock" title="Red Alarm"class="pics">
-                <img src="Mojito.jpg" alt="Mint Mojito" title="Not Alcohol"class="pics">
-                <img src="3Idiots Scoot.jpg" title="3 Idiots Scooter, Pangong Lake"class="pics">
+
+             <div class="rows">
+                <div class="columns">
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Rooftop.jpg" alt="Rooftop" title="Roofotp" class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">The Rooftop<br>17/03/2025</p>
+                            <br>
+                            <p class="textt">A quiet moment overlooking the city skyline</p>
+                        </div>
+                    </div>
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Starry Night.jpg" alt="Stars" title="Starry Night"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">A Starry Night<br>15/03/2025</p>
+                            <br>
+                            <p class="textt">A dreamy night under a starlit sky.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Suits.jpg" alt="Suits" title="Suits"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Suits<br>17/03/2025</p>
+                            <br>
+                            <p class="textt">"You just got Litt up!"</p>
+                        </div>
+                    </div>
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Cake.jpg" alt="Cake" title="Chocolate Cake"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Chocolate Cake<br>15/03/2025</p>
+                            <br>
+                            <p class="textt">A sweet masterpiece ready to be devoured!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Event.jpg" alt="Sprite" title="SlowCheeta"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Slow Cheeta<br>17/03/2025</p>
+                            <br>
+                            <p class="textt">Dropping bars and owning the stage!</p>
+                        </div>
+                    </div>
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Clock.jpg" alt="Alarm Clock" title="Red Alarm"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Red Alarm<br>15/03/2025</p>
+                            <br>
+                            <p class="textt">Time stands still in elegance and style.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="columns">
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="Mojito.jpg" alt="Mint Mojito" title="Not Alcohol"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Mint Mojito<br>17/03/2025</p>
+                            <br>
+                            <p class="textt">Refreshing vibes in a bottle - a perfect mojito!</p>
+                        </div>
+                    </div>
+                    <div class="fitbox">
+                        <div class="top">
+                            <img src="3Idiots Scoot.jpg" title="3 Idiots Scooter, Pangong Lake"class="pics">
+                        </div>
+                        <div class="bottom">
+                            <p class="tile">Pangong Lake<br>15/03/2025</p>
+                            <br>
+                            <p class="textt">#AalIzzWell</p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
         </div>
         <br>
         <hr>
@@ -62,14 +143,14 @@
         <div id="soon" class="boxes"><h1>Coming Soon</h1>
             <p>I will be learning a lot of new things, creating a lot of projects. Stay tuned for future updates!</p>
         </div>
-
     </div>
     <br>
-    <div id="end"><div id="contact">Contact Me</div>
-        <div id="image"><a class="imgs"  href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=usf5sh7" target="_blank"><img src="Instagram.png"></a>
-            <a class="imgs" href="https://github.com/peopleig" target="_blank"><img src="GitHub.png"></a>
-            <a class="imgs" href="mailto:johndoe@gmail.com"><img src="Gmail.png" alt="Mail Id" title="Mail me at"></a>
-            <a class="imgs" href="#" target="_blank"><img src="LinkedIn.png"></a>
+    <div id="end">
+        <div id="contact">Contact Me</div>
+        <div id="image"><a class="imgs"  href="https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=copy_link&utm_content=usf5sh7" target="_blank"><img src="inn.svg"></a>
+            <a class="imgs" href="https://github.com/peopleig" target="_blank"><img src="Github.svg"></a>
+            <a class="imgs" href="mailto:johndoe@gmail.com"><img src="emaill.svg" alt="Mail Id" title="Mail me at"></a>
+            <a class="imgs" href="#" target="_blank"><img src="Linn.svg"></a>
         </div>
     </div>
 </body>
