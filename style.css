@@ -53,15 +53,15 @@
     text-decoration: none;
     color: white;
     font-size: 3vw;
-    padding-right: 20px;
-    padding-left: 10px;
+    padding-right: 1.25rem;
+    padding-left: 0.625rem;
 }
 #home, #works, #contacte {
     background-color: #0A0B10;
 }
 .ref :hover , .NewNavBar :hover{
     border-style: solid;
-    border-width: 2px;
+    border-width: thick;
     border-color: #7067CF;
     border-top: none;
     border-bottom: none;
@@ -73,10 +73,10 @@
     border: none;
     cursor: pointer;
     position: absolute;
-    top: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    top: 1.25rem;
+    right: 1.25rem;
+    width: 3.125rem;
+    height: 3.125rem;
     background-color: #0A0B10;
 }
 
@@ -194,7 +194,7 @@ h1 {
     background-color: #0F1220;
     border-style: solid;
     border-color: white;
-    border-width: 2px;
+    border-width: thin;
 }
 .card-front a {
     padding: 1rem;
@@ -210,7 +210,6 @@ h1 {
         width: 16rem;
         height: 6rem;
         margin: 1rem auto;
-        perspective: 1000px;
         cursor: pointer;
       }  
       
@@ -220,9 +219,9 @@ h1 {
 }
 
 .card-front a img {
-    width: 30px;
+    width: 1.875rem;
     background-color: #0A0B10;
-    padding: 10px;
+    padding: 0.625rem;
 }
 .card-back {
     background-color: #181d33;
@@ -245,8 +244,8 @@ h1 {
 .fitbox {
     display: flex;
     position: relative;
-    width: 450px;
-    height: 350px;
+    width: 28.125rem;
+    height: 21.875rem;
     margin-bottom: 2vw;
 }
 .top, .bottom {
@@ -288,8 +287,8 @@ h1 {
     .fitbox {
         display: flex;
         position: relative;
-        width: 300px;
-        height: 230px;
+        width: 18.75rem;
+        height: 14.375rem;
         margin-bottom: 3vw;
     }
 }
@@ -298,8 +297,8 @@ h1 {
     .fitbox {
         display: flex;
         position: relative;
-        width: 200px;
-        height: 130px;
+        width: 12.5rem;
+        height: 8.125rem;
         margin-bottom: 3vw;
     }
     .bottom p {
@@ -344,7 +343,7 @@ h1 {
     display: flex;
     width: 50%;
     justify-content: space-evenly;
-    padding-right: 20px;
+    padding-right: 1.25rem;
     padding-top : 1rem;
     padding-bottom: 1rem;
 }
