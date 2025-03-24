@@ -333,14 +333,14 @@ h1 {
 /* Footer Starting */
 
 #ContactMe {
-    background-color: #0A0B10;
+    background-color: #7067CF;
     display: flex;
     align-items: center;
     width: 100%;
     justify-content: space-around;
 }
 #image {
-    background-color: #0A0B10;
+    background-color: #7067CF;
     display: flex;
     width: 50%;
     justify-content: space-evenly;
@@ -353,7 +353,7 @@ h1 {
     color: white;
     display: inline;
     width: 50%;
-    background-color: #0A0B10;
+    background-color: #7067CF;
     padding-top: 1vw;
     padding-bottom: 1rem;
     padding-left: 2rem;
@@ -366,10 +366,10 @@ h1 {
     animation: bounce 0.5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
-    background-color: #0A0B10;
+    background-color: #7067CF;
 }
 #image a {
-    background-color: #0A0B10;
+    background-color: #7067CF;
 }
 
 @keyframes bounce {
